@@ -156,6 +156,8 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
     ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       font-size: inherit;
@@ -204,9 +206,9 @@ Google’s Firebase Analytics and related services to measure usage and
 diagnose issues. According to Google’s documentation, Google Analytics
 for Firebase may collect device identifiers such as a mobile advertising
 ID, IDfV (on iOS), Android ID, instance ID and analytics app‑instance
-ID:contentReference[oaicite:0]{index=0}. Firebase services also collect device
+ID. Firebase services also collect device
 information and app usage data (e.g., which screens are
-viewed):contentReference[oaicite:1]{index=1}. This data is used in aggregate to
+viewed). This data is used in aggregate to
 understand how users interact with the app, to troubleshoot problems and
 to improve the app’s features. We do not use Firebase Analytics to
 identify individual users, and we do not log personally identifiable
@@ -216,11 +218,11 @@ banner and interstitial advertisements using the Google Mobile Ads SDK
 (AdMob). Google’s SDK automatically collects and shares certain end‑user
 data—including IP address, user interaction information, diagnostic data
 and device or account identifiers—for advertising, analytics and
-fraud‑prevention purposes:contentReference[oaicite:2]{index=2}. This includes
+fraud‑prevention purposes. This includes
 collecting the Android advertising ID, app‑set ID and other identifiers
-associated with signed‑in accounts:contentReference[oaicite:3]{index=3}. All
+associated with signed‑in accounts. All
 data sent through the SDK is encrypted in transit using Transport Layer
-Security (TLS):contentReference[oaicite:4]{index=4}. Users can reset or delete
+Security (TLS). Users can reset or delete
 the Android advertising ID or limit ad personalisation via their device
 settings.</li>
 <li><strong>Cookies and Similar Technologies.</strong> Advertising
@@ -252,7 +254,7 @@ analytics to monitor app performance and stability.</li>
 <li><strong>Advertising.</strong> We work with ad networks to display
 ads in the app. Advertising partners may use collected data (such as
 device identifiers and interaction data) to deliver and measure
-personalised or contextual advertisements:contentReference[oaicite:5]{index=5}.
+personalised or contextual advertisements.
 We do not control or access the data collected by these partners.</li>
 <li><strong>Compliance and Protection.</strong> We may use or disclose
 information if required by law, to enforce our terms, or to protect the
@@ -265,14 +267,14 @@ provide our services:</p>
 <ul>
 <li><strong>Google Firebase.</strong> We share anonymous usage data with
 Firebase for analytics purposes. Firebase may collect device identifiers
-and usage information:contentReference[oaicite:6]{index=6}. Google’s terms
+and usage information. Google’s terms
 require developers to disclose which Firebase services they use, abide
 by privacy laws and provide a compliant privacy
-policy:contentReference[oaicite:7]{index=7}.</li>
+policy.</li>
 <li><strong>Advertising Partners.</strong> Data collected by the Google
 Mobile Ads SDK (IP address, device identifiers, user interactions and
 diagnostics) is shared with Google and its advertising
-partners:contentReference[oaicite:8]{index=8}. This information is used for ad
+partners. This information is used for ad
 selection, performance measurement and fraud detection. We do not
 receive the raw data collected by these partners.</li>
 <li><strong>Aggregated Data.</strong> We may share aggregated,
@@ -287,7 +289,7 @@ calculators is not stored on our servers and is cleared when you exit
 the calculator or close the app.</li>
 <li><strong>Analytics and Advertising Data.</strong> Firebase Analytics
 and advertising networks retain data according to their own retention
-policies:contentReference[oaicite:9]{index=9}. We do not have direct control
+policies. We do not have direct control
 over these retention periods. We retain only aggregated analytics
 reports as long as necessary to improve the app.</li>
 </ul>
@@ -302,7 +304,7 @@ be downloaded globally. Data collected by Firebase and AdMob may be
 transferred to and processed on servers located in the United States or
 other countries in which Google and its service providers maintain
 facilities. Google states that user data is encrypted in transit using
-TLS:contentReference[oaicite:10]{index=10}.</p>
+TLS.</p>
 <h2 id="your-choices">Your Choices</h2>
 <ul>
 <li><strong>Reset Advertising ID or Limit Personalised Ads.</strong> You
@@ -321,7 +323,7 @@ your device’s file manager.</li>
 <p>We implement reasonable technical and organisational measures to
 protect the information transmitted through the app. Data sent via
 Firebase and the Google Mobile Ads SDK is encrypted in transit using
-TLS:contentReference[oaicite:11]{index=11}. However, no method of transmission or
+TLS. However, no method of transmission or
 electronic storage is completely secure; therefore we cannot guarantee
 absolute security.</p>
 <h2 id="links-to-other-sites">Links to Other Sites</h2>
